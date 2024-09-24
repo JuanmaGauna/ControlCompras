@@ -7,7 +7,7 @@ function InputItem({ addItem }) {
 
   const handleAddClick = () => {
     if (newItem.trim() === '') { // Verificar si el campo está vacío
-      setErrorMessage('Ingresar producto');
+      setErrorMessage('⚠️ Debes ingresar un producto!');
     } else {
       addItem(newItem, quantity);
       setNewItem('');  // Limpiar campo del producto
