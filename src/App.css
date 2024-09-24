@@ -6,7 +6,7 @@
   align-items: center;
   height: 100vh; /* Altura completa de la ventana */
   text-align: center; /* Centra el texto dentro del contenedor */
-  background-color: #f0f0f0; /* Color de fondo opcional */
+  /* background-color: #f0f0f0; Color de fondo opcional */
   background-image: url('img/super.jpg'); /* Cambia por la URL de tu imagen */
   background-size: cover;  /* Asegura que la imagen cubra toda la ventana */
   background-position: center;  /* Centra la imagen de fondo */
@@ -16,8 +16,8 @@
   border: 2px solid #000;  /* Borde del recuadro */
   padding: 20px;           /* Espacio interior del recuadro */
   border-radius: 10px;      /* Bordes redondeados opcionales */
-  background-color: #fff;   /* Fondo del recuadro */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+  background: linear-gradient(#e66465, #9198e5);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.737); /* Sombra para darle profundidad */
   text-align: center;       /* Centrar el texto dentro del recuadro */
   width: 80%;               /* Ajusta el ancho del recuadro */
   max-width: 600px;         /* Máximo ancho del recuadro */
@@ -25,17 +25,85 @@
 
 /* Estilo para el título principal */
 .tituloPrincipal {
-  
-  color: rgb(39, 8, 161); /* Cambia el color del texto a azul */
-  font-size: 2rem; /* Ajusta el tamaño de fuente si lo deseas */
+  color: #ffffff;
+  font: normal 40px Varela Round, sans-serif;
+  height: 40px;
+  left: 0;
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  animation: move linear 2000ms infinite;
+  z-index: 2;
+}
+/*Animación para rotar las sombras (efecto)*/
+@keyframes move {
+  0% {
+    text-shadow:
+      4px -4px 0 #da0641,
+      3px -3px 0 #da0641,
+      2px -2px 0 #da0641,
+      1px -1px 0 #da0641,
+      -4px 4px 0 #13f1fc,
+      -3px 3px 0 #13f1fc,
+      -2px 2px 0 #13f1fc,
+      -1px 1px 0 #13f1fc
+    ;
+  }
+  25% {
+    text-shadow:
+      -4px -4px 0 #13f1fc,
+      -3px -3px 0 #13f1fc,
+      -2px -2px 0 #13f1fc,
+      -1px -1px 0 #13f1fc,
+      4px 4px 0 #da0641,
+      3px 3px 0 #da0641,
+      2px 2px 0 #da0641,
+      1px 1px 0 #da0641
+    ;
+  }
+  50% {
+    text-shadow:
+      -4px 4px 0 #da0641,
+      -3px 3px 0 #da0641,
+      -2px 2px 0 #da0641,
+      -1px 1px 0 #da0641,
+      4px -4px 0 #13f1fc,
+      3px -3px 0 #13f1fc,
+      2px -2px 0 #13f1fc,
+      1px -1px 0 #13f1fc
+    ;
+  }
+  75% {
+    text-shadow:
+      4px 4px 0 #13f1fc,
+      3px 3px 0 #13f1fc,
+      2px 2px 0 #13f1fc,
+      1px 1px 0 #13f1fc,
+      -4px -4px 0 #da0641,
+      -3px -3px 0 #da0641,
+      -2px -2px 0 #da0641,
+      -1px -1px 0 #da0641
+    ;
+  }
+  100% {
+    text-shadow:
+      4px -4px 0 #da0641,
+      3px -3px 0 #da0641,
+      2px -2px 0 #da0641,
+      1px -1px 0 #da0641,
+      -4px 4px 0 #13f1fc,
+      -3px 3px 0 #13f1fc,
+      -2px 2px 0 #13f1fc,
+      -1px 1px 0 #13f1fc
+    ;
+  }
 }
 
-/* Puedes eliminar el siguiente bloque si no estás usando el logo de React */
 .App {
   text-align: center;
 }
 
-/* Puedes eliminar esto si no usas un logo */
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -47,7 +115,6 @@
   color: white;
 }
 
-/* Puedes eliminar esto si no necesitas un enlace estilizado */
 .App-link {
   color: #3026c2;
 }

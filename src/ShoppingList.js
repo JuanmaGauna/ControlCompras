@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import InputItem from './InputItem';
-import ItemList from './ItemList';
+import InputItem from './creations/InputItem';
+import ItemList from './creations/ItemList';
 import './App.css'
 
 function ShoppingList() {
