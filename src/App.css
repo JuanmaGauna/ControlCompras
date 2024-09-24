@@ -1,18 +1,41 @@
+/* Estilo para centrar el contenedor y el texto */
+.center-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Altura completa de la ventana */
+  text-align: center; /* Centra el texto dentro del contenedor */
+  background-color: #f0f0f0; /* Color de fondo opcional */
+  background-image: url('img/super.jpg'); /* Cambia por la URL de tu imagen */
+  background-size: cover;  /* Asegura que la imagen cubra toda la ventana */
+  background-position: center;  /* Centra la imagen de fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+.box-container{
+  border: 2px solid #000;  /* Borde del recuadro */
+  padding: 20px;           /* Espacio interior del recuadro */
+  border-radius: 10px;      /* Bordes redondeados opcionales */
+  background-color: #fff;   /* Fondo del recuadro */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+  text-align: center;       /* Centrar el texto dentro del recuadro */
+  width: 80%;               /* Ajusta el ancho del recuadro */
+  max-width: 600px;         /* Máximo ancho del recuadro */
+}
+
+/* Estilo para el título principal */
+.tituloPrincipal {
+  
+  color: rgb(39, 8, 161); /* Cambia el color del texto a azul */
+  font-size: 2rem; /* Ajusta el tamaño de fuente si lo deseas */
+}
+
+/* Puedes eliminar el siguiente bloque si no estás usando el logo de React */
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+/* Puedes eliminar esto si no usas un logo */
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -24,15 +47,7 @@
   color: white;
 }
 
+/* Puedes eliminar esto si no necesitas un enlace estilizado */
 .App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  color: #3026c2;
 }

@@ -55,5 +55,4 @@ function ItemList({ items, removeItem, updateItem, togglePurchased }) {
     </ul>
   );
 }
-
 export default ItemList;

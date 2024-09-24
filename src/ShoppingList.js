@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import InputItem from './InputItem';
 import ItemList from './ItemList';
+import './App.css'
 
 function ShoppingList() {
   const [items, setItems] = useState([]);
@@ -28,8 +29,9 @@ function ShoppingList() {
   };
 
   return (
-    <div>
-      <h1>Lista de Compras</h1>
+    <div className="center-container">
+      <div className='box-container'>
+      <h1 className="tituloPrincipal">Lista de Compras </h1>
       <InputItem addItem={addItem} />
       <ItemList 
         items={items} 
@@ -37,6 +39,7 @@ function ShoppingList() {
         updateItem={updateItem} 
         togglePurchased={togglePurchased} 
       />
+      </div>
     </div>
   );
 }
